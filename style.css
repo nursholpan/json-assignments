@@ -4,15 +4,27 @@
 body {
 	margin:0px;
 	padding: 0px;
-	background-color: #2F798B;
+	background-color: black;
 	font-family: fantasy;
 }
-
+.Hero-Section {
+	display: flex;
+/*	flex-direction: column; */
+	justify-content: center; /*justifies the content to the centere vertically */
+	align-items:flex-end;	/* to put the content to the end */
+	padding-right: 10px; /*for some gap from the right */ 
+	height: 85vh;
+	background-image: url(https://www.azernews.az/media/2024/03/11/410190930_905437397748998_7912044528990468088_n.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 h1{
+	margin-bottom: 5px;
 	text-align: center;
 	font-size: 4rem;
-	background-color: whitesmoke;
-	color: #E2AE3E;
+	color: black;
+	text-shadow: 20%;
 }
 
 h3 {
@@ -21,4 +33,59 @@ h3 {
 	font-family: cursive;
 	font-size: 3rem;
 	color: #E2AE3E;
+} 
+
+h3 {
+  font-weight: bolder;
+  margin-top: 0;
+  text-decoration: underline;
 }
+
+h4 {
+	margin: 0;
+}
+
+
+#outputElement {
+  padding: 2vmin;
+  background-color: rgba(0, 25, 4, 0.39);
+  color: #333;
+}
+
+#outputHeader {
+  color: #fff;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+#contentGrid {
+  display: grid;
+  grid-auto-rows: auto;  
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+  grid-gap: 4vmin; /* Adds spacing between items */
+  background-color: rgba(0, 0, 4, 0.39);
+  padding: 2vmin;
+  font-size: 2rem;
+  height: 100%;
+}
+
+
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 1vmin;
+  box-shadow: 2px 0px 10px 5px rgba(255,255,255,0.62);
+  border: 2px solid #eee;
+  border-radius: 5%;
+  overflow: hidden;
+  height: auto;
+  margin-top: 50px;
+  background: linear-gradient(135deg, #CC432C, #0A345D); /* Gradient color */
+
+}
+
+.footerImageContainer {
+  background-image: url('');
+  background-position: center;
+}
+
